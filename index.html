@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="STYLESHEET" TITLE="default" TYPE="text/css" href="./admin.css">
+<title>新しい掲示板の作成</title>
+</head>
+
+<body>
+    <form action="newbbs.php" method="POST">
+        <h1>新しい掲示板の作成</h1>
+        <div align="center">
+            <table>
+                <tr>
+                    <td>掲示板名</td>
+                    <td>
+                        <input type="text" name="boardname" size="30">
+                </tr>
+                <tr>
+                    <td>掲示板ID</td>
+                    <td>
+                        <input type="text" name="boardid" size="30">
+                </tr>
+                <tr>
+                    <td>ページあたり表示件数</td>
+                    <td>
+                        <input type="text" name="defaultrange" size="30">
+                </tr>
+                <tr>
+                    <td>ページあたり表示件数(インデックス)</td>
+                    <td>
+                        <input type="text" name="defaultrangeindex" size="30">
+                </tr>
+                <tr>
+                    <td>ページあたり表示件数(スレッド)</td>
+                    <td>
+                        <input type="text" name="defaultrangethread" size="30">
+                </tr>
+                <tr>
+                    <td>開設者ホームページ</td>
+                    <td>
+                        <input type="text" name="homepage" size="30">
+                </tr>
+                <tr>
+                    <td>スタイルシート</td>
+                    <td>
+                        <input type="text" name="css" size="30" value="./bbs.css">
+                </tr>
+                <tr>
+                    <td>メッセージ表示PHP</td>
+                    <td>
+                        <input type="text" name="showmessagephp" size="30" value="./showmessage.php">
+                </tr>
+                <tr>
+                </tr>
+            </table>
+            <input type="submit" value="送信">
+        </div>
+    </form>
+</body>
